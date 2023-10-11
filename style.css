@@ -30,12 +30,14 @@ a{
   height: auto;
 }
 
-.footer {
-  position: absolute;
+footer{
+	background-color: #242424;
+  position: fixed;
   right: 0;
-  bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: #242424;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
   text-align: center;
+  padding: 1rem;
 }
