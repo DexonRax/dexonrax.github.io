@@ -29,3 +29,13 @@ a{
   width: 30%;
   height: auto;
 }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #242424;
+  text-align: center;
+}
