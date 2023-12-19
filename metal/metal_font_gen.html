@@ -41,7 +41,7 @@
 	        -ms-transform: scale(-1, 1);
 	        transform: scale(-1, 1);
 	    }
-	    div{
+	    #image{
 	    	width: 512px;
 	    	height: 512px;
 	    	background-color: black;
@@ -76,15 +76,15 @@
 
 <br>
 <label for="font_size">Choose font size:</label>
-<input type="text" id="font_size" value="160px" onchange="font_size()">
+<input type="text" id="font_size" value="160px" onchange="text_changed()">
 
 <br>
 <label for="letter_spacing">Choose letter spacing:</label>
-<input type="text" id="letter_spacing" value="3px" onchange="change_spacing()">
+<input type="text" id="letter_spacing" value="3px" onchange="text_changed()">
 
 <br>
 <label for="font_select">Choose a font:</label>
-<select id="font_select" onchange="change_font()">
+<select id="font_select" value="Yenisack" onchange="change_font()">
   <option value="Yenisack">Yenisack</option>
   <option value="Snoserose">Snoserose</option>
   <option value="Gorecobra">Gorecobra</option>
@@ -94,9 +94,10 @@
 <br><br><br>
 <br><br><br>
 
-<div>
-<span id="text_edit_left" >Te</span><span id="text_edit_right" class="flipH">Tx</span>
-</div>
+<canvas id="image">
+	<!--<span id="text_edit_left" >Te</span><span id="text_edit_right" class="flipH">Tx</span>-->
+</canvas>
+
 </body>
 
 </html>
