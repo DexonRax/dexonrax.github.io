@@ -9,6 +9,9 @@
     		font-family: CodeFont;
     		src: url(AnonymousPro-Regular.ttf);
 		}
+		main {
+		  flex: 1;
+		}
 		body{
 			font-family: monospace;
 			background-color: #222831;
@@ -19,6 +22,9 @@
 			color: #EEEEEE;
 		}
 		h3{
+			color: #FFD369;
+		}
+		h2{
 			color: #FFD369;
 		}
 		code{
@@ -44,14 +50,26 @@
 		}   
 		button:hover{
 			transform: translateY(-2px);
-		}             
+		} 
+
+		a{
+			color: #FFFFFF;
+		}
+
+
 
 	</style>
 </head>
 <body>
 
-<h3>Nazwy klasy i obiektu zaczynaj dużymi literami, tak się przyjęło</h3>
+<hr>
+<center><h2>Projekty</h2></center>
+<center><a href="https://github.com/DexonRax/tablice-kms">Tablice dynamiczne</a>  -  <a href="https://github.com/DexonRax/Czasomierz">Czasomierz</a></center><br>
+<hr>
 
+
+<br>
+<h3>Nazwy klasy i obiektu zaczynaj dużymi literami, tak się przyjęło</h3>
 Class Name: <input type="text" name="classNameText" id="classNameText">
 <br>
 Object Name: <input type="text" name="objectNameText" id="objectNameText"> 
@@ -68,7 +86,6 @@ Object Name: <input type="text" name="objectNameText" id="objectNameText">
   <code id="classCode">
   </code>
 </pre>
-
 
 
 
