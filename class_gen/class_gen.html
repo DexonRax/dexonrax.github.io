@@ -96,7 +96,7 @@ main_libs = `
 main_func = `
 int main(){
 \t${class_name} ${object_name};
-\tstd::cout<<x<<std::endl;
+\tstd::cout<<${object_name}.x<<std::endl;
 \treturn 0;
 }
 
@@ -117,7 +117,7 @@ class ${class_name}{
 \t\tint y = 1;
 
 \tpublic:
-\t\t${class_name}{ //konstruktor
+\t\t${class_name}(){ //konstruktor
 \t\t\tthis->x = 3;
 \t\t\tthis->y = 3;
 \t\t\tstd::cout<<x<<" "<<y<<std::endl;
@@ -129,7 +129,7 @@ class ${class_name}{
 \t\t\tstd::cout<<x<<" "<<y<<std::endl;
 \t\t}
 
-\t\t~${class_name}{ //dekonstruktor
+\t\t~${class_name}(){ //dekonstruktor
 \t\t\tthis->x = 3;
 \t\t\tthis->y = 3;
 \t\t\tstd::cout<<x<<" "<<y<<std::endl;
