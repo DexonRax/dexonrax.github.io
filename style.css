@@ -16,9 +16,9 @@ p{
 }
 
 hr {
-  height: 2px;
-  background-color: #858585;
-  border: none;
+	height: 2px;
+	background-color: #858585;
+	border: none;
 }
 
 a{
@@ -27,18 +27,18 @@ a{
 }
 
 .image {
-  width: 30%;
-  height: auto;
+	width: 30%;
+	height: auto;
 }
 
 footer{
 	background-color: #242424;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  text-align: center;
-  padding: 1rem;
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding: 1rem;
 }
