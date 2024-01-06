@@ -40,12 +40,10 @@
 			font-weight: 700;
 			line-height: 1;
 			transition: transform 200ms,background 200ms;
-
 		}   
 		button:hover{
 			transform: translateY(-2px);
 		}             
-
 	</style>
 </head>
 <body>
@@ -74,9 +72,35 @@ Object Name: <input type="text" name="objectNameText" id="objectNameText">
 
 <script>
 	
+const copyButtonLabel = "Copy Code";
 
-let class_name = "Gowno"
-let object_name = "Psie"
+// use a class selector if available
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+  // only add button if browser supports Clipboard API
+  if (navigator.clipboard) {
+    let button = document.createElement("button");
+
+    button.innerText = copyButtonLabel;
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      await copyCode(block);
+    });
+  }
+});
+
+async function copyCode(block) {
+  let code = block.querySelector("code");
+  let text = code.innerText;
+
+  await navigator.clipboard.writeText(text);
+}
+
+
+let class_name = ""
+let object_name = ""
 
 let main_libs = ""
 let main_func = ""
@@ -155,7 +179,8 @@ function rewrite(){
 }
 
 
-
+genCode(class_name,object_name)
+rewrite()
 
 //rewrite()
 
