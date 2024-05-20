@@ -24,6 +24,7 @@ h1{
     padding-top: 10px;
     float: left;
     color: white;
+    overflow: hidden;
 }
 
 #aside>ul{
