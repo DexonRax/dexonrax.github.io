@@ -24,6 +24,7 @@ h1{
     padding-top: 10px;
     float: left;
     color: white;
+    box-shadow: 1px 10px 31px -15px #131316 inset;
 }
 
 #aside>ul{
