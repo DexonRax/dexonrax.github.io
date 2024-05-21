@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mały trollarz</title>
+    <style>
+    	body{
+		    background-color: #131316;
+		    color: white;
+    	}
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid black;
+            overflow: auto;
+		    background-color: #26262C;
+		    color: rgb(180,180,180);
+		    overflow: auto;
+		    box-shadow: inset 4px 4px 8px 2px #131316;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formularzowy papieżak</h1>
+    <pre><code>//skrypt do wstawiania papiezakow na niezabezpieczone strony
+
+var form = document.querySelector('form');
+
+if (form) {
+	var inputs = form.getElementsByTagName('input');
+	console.log("[!] wyzerowano type, pattern i datamask");
+	for (var i = 0; i < inputs.length; i++) {
+		if(inputs[i].type != "submit"){
+			inputs[i].type = "text";
+		}
+		inputs[i].pattern = "";
+		inputs[i].datamask = "";
+		if(inputs[i].name != ""){
+			console.log(inputs[i].name);
+		}else{
+			console.log("[!] input bez name");
+		}
+	}
+	var wybrane_pole = prompt('podaj pole')	
+
+	for (var i = 0; i < inputs.length; i++) {
+		if(wybrane_pole == inputs[i].name){
+			inputs[i].value = "&lt;img src=https://i.imgur.com/1qHrNFs.jpeg&gt;"
+			break;
+		}
+	}
+
+} else {
+	console.log('ni ma forma');
+}</code></pre>
+
+<form>
+	<input type="text" name="chuj">
+</form>
+
+</body>
+</html>
+</code>
+
+</body>
+</html>
