@@ -44,14 +44,6 @@ h1{
     list-style-type: square;
 }
 
-a:visited{
-    color: rgb(180,180,180);
-}
-
-a:link{
-    color: rgb(230,230,230);
-}
-
 #main{
     width: 86%;
     height: 76vh;
@@ -100,8 +92,26 @@ a:link{
 }
 
 #aside_image:hover{
-    transform: rotateY(180deg);
-    transition: all 2s ease;
+    transform: rotateY(720deg);
+    transition: all 1s ease;
 
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(230,230,230);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(180,180,180);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
